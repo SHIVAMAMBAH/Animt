@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animt</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 5%;
+            height: 50px;
+            border: 2px solid rgb(197, 48, 48);
+            margin-top: 10px;
+            color: aliceblue;
+            animation-name: animtmove;
+            animation-delay: none;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes animtmove {
+            0% {
+                width: 5%;
+                background-color: white;
+            }
+
+            25% {
+                width: 30%;
+                background-color: rgb(207, 187, 187);
+            }
+
+            50% {
+                width: 60%;
+                background-color: rgb(198, 131, 131);
+            }
+
+            75% {
+                width: 85%;
+                background-color: rgb(184, 54, 54);
+            }
+
+            100% {
+                width: 100%;
+                background-color: rgb(255, 6, 6);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>
